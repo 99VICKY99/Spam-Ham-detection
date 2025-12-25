@@ -3,6 +3,9 @@ from pymongo import MongoClient
 import os
 from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
+
 # 1. Load CSV into DataFrame
 csv_file_path = "spamham.csv"  # Replace with your actual path
 df = pd.read_csv(csv_file_path)
